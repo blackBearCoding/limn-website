@@ -1,0 +1,6 @@
+.welcome{
+    position: relative;
+    top: 3em;
+    left: 3em;
+    z-index: 1;
+}

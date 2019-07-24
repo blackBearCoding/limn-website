@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d3047;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo{
+    width: 10em;
+    height: 5em;
+    object-fit: cover;
+    object-position: 0 0;
+    margin: 1em;
+}

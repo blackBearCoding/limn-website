@@ -1,0 +1,17 @@
+.background, .background::after{
+    width: 100%;
+    height: 44%;
+}
+
+.background::after{
+    content: '';
+    background-image: url('../assets/zenpathz5.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
+    opacity: 0.9;
+    position: absolute;
+    top: 25em;
+    z-index: -1;
+}
