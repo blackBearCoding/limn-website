@@ -44,6 +44,7 @@ export default class EventsPage extends Component {
                     <Grid item xs={6} style={{padding: '1em'}}>
                         <EventSignUpForm/>
                     </Grid>
+
                 </Grid>
             </>
         )
