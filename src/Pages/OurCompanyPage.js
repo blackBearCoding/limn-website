@@ -8,7 +8,7 @@ export default class OurCompanyPage extends Component {
         return (
             <>
                 <Grid container justify="space-around" type="row" style={{marginTop: '1em'}}>
-                    <Grid item span={4} style={{ backgroundColor: "#f06449", color:"#fefcfd", padding: "1em"}}>
+                    <Grid item span={4} style={{ backgroundColor: "#f06449", color:"#fefcfd", padding: "1em"}} className="infoSquare">
                         <Typography variant="h2">
                             What we do
                         </Typography>
@@ -16,7 +16,7 @@ export default class OurCompanyPage extends Component {
                             With over twenty  years experience building multimedia software including games, simulations, websites,  and interactive worlds, our current projects are being built by developers, artists, producers, musicians, testers, and marketing individuals located primarily in the Colorado, USA area.
                         </Typography>
                     </Grid>
-                    <Grid item span={4} style={{ backgroundColor: "#05668d", color: "#fefcfd", padding: "1em" }}>
+                    <Grid item span={4} style={{ backgroundColor: "#05668d", color: "#fefcfd", padding: "1em" }} className="infoSquare">
                         <Typography variant="h2">
                             Why we do it
                         </Typography>
@@ -24,7 +24,7 @@ export default class OurCompanyPage extends Component {
                             The majority of titles coming out today are rushed to market in part due to over-run schedules and budgets.  As a result, these titles are often missing critical features that can make a big difference.  We have taken a different approach with a process and tools that allow more polish and testing phases earlier in the development methodology.
                         </Typography>
                     </Grid>
-                    <Grid item span={4} style={{ backgroundColor: "#2d3142", color: "#fefcfd", padding: "1em" }}>
+                    <Grid item span={4} style={{ backgroundColor: "#2d3142", color: "#fefcfd", padding: "1em" }} className="infoSquare">
                         <Typography variant="h2">
                             How we do it
                         </Typography>

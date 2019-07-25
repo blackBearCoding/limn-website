@@ -4,3 +4,19 @@
     left: 3em;
     z-index: 1;
 }
+
+@media only screen and (max-width: 650px){
+    .welcome{
+        top: 1em;
+        left: 1em;
+        transform: scale(0.75);
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .welcome{
+        top: 0.5em;
+        left: 0.5em;
+        transform: scale(0.7);
+    }
+}

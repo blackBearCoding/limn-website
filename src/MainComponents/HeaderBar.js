@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button'
 import logo from '../assets/limnlogo.png'
 import './HeaderBar.css'
 import { Link } from 'react-router-dom'
+import HamburgerMenu from '../Menus/HamburgerMenu';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -24,12 +25,15 @@ export default function HeaderBar() {
         return (
           <Box className="header">
               <img src={logo} alt="Limn Interactive logo" className="logo"></img>
-                <Button className={classes.button}><Link to="/" style={{ color: '#fefcfd', textDecorationLine: 'none'}}>Home</Link></Button>
+            <div className="navLinks">
+              <Button className={classes.button}><Link to="/" style={{ color: '#fefcfd', textDecorationLine: 'none' }}>Home</Link></Button>
               <AboutMenu />
               <DiscoverMenu />
               <SocialMediaMenu />
-                <Button className={classes.button}><Link to="/jobs" style={{ color: '#fefcfd', textDecorationLine: 'none' }}>Jobs</Link></Button>
-                <Button className={classes.button}><Link to="/contact" style={{ color: '#fefcfd', textDecorationLine: 'none' }}>Contact</Link></Button>
+              <Button className={classes.button}><Link to="/jobs" style={{ color: '#fefcfd', textDecorationLine: 'none' }}>Jobs</Link></Button>
+              <Button className={classes.button}><Link to="/contact" style={{ color: '#fefcfd', textDecorationLine: 'none' }}>Contact</Link></Button>
+            </div>
+                <HamburgerMenu/>
           </Box>
         )
     
