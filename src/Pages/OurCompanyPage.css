@@ -1,7 +1,6 @@
-@media only screen and (max-width: 1167px){
-    .infoSquare{
-        transform: scale(0.8);
-        top: 0em;
-        position: relative;
-    }
+.card-holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 3em;
 }
