@@ -66,7 +66,7 @@ export default function HamburgerMenu() {
                     <Typography variant="subtitle1" style={{color: '#05668d'}}>General</Typography>
                 </ListItem>
                 {['Home', 'Jobs', 'Contact'].map((text, index) => (
-                    <Link to={links1[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }}>
+                    <Link to={links1[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }} key={index}>
                         <ListItem button key={text}>
                             <ListItemText primary={text} />
                         </ListItem>
@@ -79,7 +79,7 @@ export default function HamburgerMenu() {
                     <Typography variant="subtitle1" style={{color: '#05668d'}}>About</Typography>
                 </ListItem>
                 {['Our Company', 'Our Team', 'FAQ'].map((text, index) => (
-                    <Link to={links2[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }}>
+                    <Link to={links2[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }} key={index + text.length}>
                         <ListItem button key={text}>
                             <ListItemText primary={text} />
                         </ListItem>
@@ -93,7 +93,7 @@ export default function HamburgerMenu() {
                     <Typography variant="subtitle1" style={{color: '#05668d'}}>Discover</Typography>
                 </ListItem>
                 {['Blog', 'Events', 'Gallery', 'Games'].map((text, index) => (
-                    <Link to={links3[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }}>
+                    <Link to={links3[index]} style={{ color: '#2d3142', textDecorationLine: 'none' }} key={index}>
                         <ListItem button key={text}>
                             <ListItemText primary={text} />
                         </ListItem>
