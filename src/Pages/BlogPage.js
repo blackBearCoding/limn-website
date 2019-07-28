@@ -7,7 +7,7 @@ export default class BlogPage extends Component {
     render() {
         return (
             <Grid type="row" container style={{marginTop: '1em'}} justify="space-around" alignItems="flex-start">
-                <Grid item xs={2} style={{ backgroundColor: '#f06449', color: '#fefcfd', padding: '0.5em'}}>
+                <Grid item xs={2} style={{ backgroundColor: '#f06449', color: '#fefcfd', padding: '0.75em'}}>
                     <Typography variant="h2">
                             Blog
                     </Typography>

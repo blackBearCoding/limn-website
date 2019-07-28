@@ -60,7 +60,7 @@ export default function EventSignUpForm (){
         setValues({ ...values, [name]: event.target.value });
     };
         return (
-            <>
+            <div style={{ position: 'sticky', top: '8em', right: '0em'}}>
                 <Grid container>
                     <Grid item xs={12}>
                         <Typography variant="h2">
@@ -144,7 +144,7 @@ export default function EventSignUpForm (){
                             <Grid item xs={6}>
                                 <FormControl>
                                     <InputLabel htmlFor="my-input" style={{ marginLeft: "0.5em" }}>Additional Comments</InputLabel>
-                                    <OutlinedInput id="my-input" aria-describedby="my-helper-text" required={true} style={{width: '40em', height: '10em'}}/>
+                                    <OutlinedInput id="my-input" aria-describedby="my-helper-text" required={true} style={{width: '40em', height: '7em'}}/>
                                     <FormHelperText id="my-helper-text">Required</FormHelperText>
                                 </FormControl>
                             </Grid>
@@ -156,6 +156,6 @@ export default function EventSignUpForm (){
                         </Grid>
                     </FormGroup>
                 </Grid>
-            </>
+            </div>
         )
 }
